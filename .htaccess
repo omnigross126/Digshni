@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} on
+    RewriteCond %{HTTP_HOST} ^digshni\.in [NC]
+    RewriteRule ^(.*)$ https://www.digshni.in/$1 [L,R=301]
+</IfModule>
